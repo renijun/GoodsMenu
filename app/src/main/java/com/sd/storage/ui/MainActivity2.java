@@ -93,6 +93,7 @@ public class MainActivity2 extends BaseTabActivity {
         MainTabFragments = null;
         setContentView(new View(this));
         super.onDestroy();
+        
     }
 
 
