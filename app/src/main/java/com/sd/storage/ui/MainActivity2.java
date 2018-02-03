@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
@@ -94,7 +95,7 @@ public class MainActivity2 extends BaseTabActivity {
         setContentView(new View(this));
         super.onDestroy();
 
-        
+        Log.e("111","11");
         
     }
 
