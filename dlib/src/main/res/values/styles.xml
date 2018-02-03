@@ -1,0 +1,236 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Widget"></style>
+
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Widget.ImageView" parent="@style/Widget">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="Widget.TextView" parent="@style/Widget">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dimen_45</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">#6c7a81</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="dialog_waiting" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+    </style>
+
+    <style name="Widget.TextView.Button" parent="@style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dimen_40</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="Widget.ListView" parent="@style/Widget">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:divider">#EAEAEA</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:fastScrollEnabled">false</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:smoothScrollbar">true</item>
+    </style>
+
+    <style name="Widget.ListItem" parent="@style/Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/padding_h_nor</item>
+        <item name="android:paddingRight">@dimen/padding_h_nor</item>
+        <item name="android:paddingBottom">@dimen/margin_smaller</item>
+        <item name="android:paddingTop">@dimen/margin_smaller</item>
+    </style>
+
+    <style name="Widget.EditText" parent="@style/Widget">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Widget.ScrollView" parent="@style/Widget">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="line_style_h_gray">
+        <item name="android:background">@color/main_black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+    <style name="line_style_h">
+        <item name="android:background">@color/main_grey</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+    <style name="line_style_v">
+        <item name="android:background">@color/main_gray2</item>
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="text_style_main_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/main_black</item>
+        <item name="android:textColorHint">@color/gray</item>
+    </style>
+
+    <style name="text_style_main_grey2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/main_grey2</item>
+    </style>
+
+    <style name="text_style_main_red">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/main_red</item>
+    </style>
+
+    <style name="lm_info_item_style" parent="@style/text_style_main_black_old_12">
+        <item name="android:paddingLeft">@dimen/dimen_10</item>
+        <item name="android:paddingRight">@dimen/dimen_10</item>
+        <item name="android:paddingTop">@dimen/dimen_10</item>
+        <item name="android:paddingBottom">@dimen/dimen_5</item>
+    </style>
+
+    <style name="text_style_main_black_old_12" parent="@style/text_style_main_black_12">
+        <item name="android:textColor">@color/tab_buttom</item>
+    </style>
+
+    <style name="text_style_main_black_old_14" parent="@style/text_style_main_black_14">
+        <item name="android:textColor">@color/tab_buttom</item>
+    </style>
+
+    <style name="text_style_main_black_old_16" parent="@style/text_style_main_black_16">
+        <item name="android:textColor">@color/tab_buttom</item>
+    </style>
+
+    <style name="text_style_main_black_old_18" parent="@style/text_style_main_black_18">
+        <item name="android:textColor">@color/tab_buttom</item>
+    </style>
+
+    <style name="text_style_main_black_14" parent="@style/text_style_main_black">
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="text_style_main_black_16" parent="@style/text_style_main_black">
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="text_style_main_black_18" parent="@style/text_style_main_black">
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="text_style_main_black_12" parent="@style/text_style_main_black">
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="text_style_main_black_10" parent="@style/text_style_main_black">
+        <item name="android:textSize">@dimen/text_size_10</item>
+    </style>
+
+    <style name="text_style_main_grey2_12" parent="@style/text_style_main_grey2">
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="text_style_main_red_14" parent="@style/text_style_main_red">
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="text_style_main_red_16" parent="@style/text_style_main_red">
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="text_style_main_red_18" parent="@style/text_style_main_red">
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+    <style name="text_style_main_red_12" parent="@style/text_style_main_red">
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="text_style_main_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="text_style_main_white_12" parent="@style/text_style_main_white">
+        <item name="android:textSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="text_style_main_white_10" parent="@style/text_style_main_white">
+        <item name="android:textSize">@dimen/text_size_10</item>
+    </style>
+
+    <style name="text_style_main_white_14" parent="@style/text_style_main_white">
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="text_style_main_white_16" parent="@style/text_style_main_white">
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="text_style_main_white_18" parent="@style/text_style_main_white">
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+     <style name="text_style_main_white_20" parent="@style/text_style_main_white">
+        <item name="android:textSize">@dimen/text_size_20</item>
+    </style>
+
+    <style name="button_style_main_red">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/main_red</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="button_style_main_red_14" parent="@style/button_style_main_red">
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="button_style_main_red_16" parent="@style/button_style_main_red">
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="custom_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="loding_progress_dialog" parent="@style/custom_dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

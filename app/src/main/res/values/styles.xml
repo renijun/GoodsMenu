@@ -1,0 +1,22 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/main_black</item>
+    </style>
+
+    <style name="Main.Item.Button" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/selector_gray_blue_corner_radius_5</item>
+        <item name="android:layout_marginTop">@dimen/dimen_20</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_40</item>
+        <item name="android:layout_marginRight">@dimen/dimen_40</item>
+        <item name="android:theme">@style/text_style_main_white_16</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_50</item>
+        <item name="android:paddingLeft">@dimen/dimen_20</item>
+    </style>
+
+</resources>

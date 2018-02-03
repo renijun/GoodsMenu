@@ -1,0 +1,59 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion  rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        multiDexEnabled true
+    }
+    
+    lintOptions {
+        abortOnError false
+    }
+
+    packagingOptions {
+        exclude 'META-INF/maven/com.squareup.okhttp/okhttp/pom.xml'
+        exclude 'META-INF/maven/com.squareup.okhttp/okhttp/pom.properties'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildToolsVersion '26.0.2'
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    // glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:support-v4:25.0.0'
+
+    // squareup:okhttp3
+    compile "com.squareup.retrofit2:retrofit:2.0.2"
+    compile "com.squareup.retrofit2:converter-gson:2.0.2"
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.0.1'
+
+    // rxjava
+
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
+
+    // support
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    // design
+    compile 'com.android.support:design:25.0.0'
+
+    compile 'com.mcxiaoke.viewpagerindicator:library:2.4.1@aar'
+
+}

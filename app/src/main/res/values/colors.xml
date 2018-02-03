@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#01AAEF</color>
+    <color name="colorPrimaryDark">#01AAEF</color>
+    <color name="colorAccent">#01AAEF</color>
+
+
+
+    <color name="gray">#808080</color>
+    <color name="main_black">#575858</color>
+
+
+    <color name="cefefef">#efefef</color>
+    <color name="cffffff">#ffffff</color>
+    <color name="c000">#000</color>
+    <color name="c808080">#808080</color>
+    <color name="c9f9f9f">#9f9f9f</color>
+    <color name="detail_do_buy">#FA56A0</color>
+    <color name="cf00">#f00</color>
+</resources>

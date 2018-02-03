@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">SPD</string>
+    <string name="loading_please_wait">正在加载~</string>
+    <string name="user_logined_change_retry_login">用户登录状态已改变，请重新登录~</string>
+    <string name="network_fail">网络连接失败~</string>
+    <string name="user_name">用户名</string>
+    <string name="password">密 码</string>
+    <string name="hint_password">请输入密码</string>
+    <string name="please_select_depart">请选择部门</string>
+    <string name="hint_username">请输入用户名</string>
+    <string name="login">登录</string>
+    <string name="procurement_storage">采购入库</string>
+    <string name="procurement_exit_storage">采购退库</string>
+    <string name="sell_storage">销售出库</string>
+    <string name="sell_exit_storage">销售退库</string>
+    <string name="exit">退出</string>
+    <string name="transfer_slip">调拨单</string>
+    <string name="check">盘点</string>
+    <string name="storage_manage">仓库管理</string>
+    <string name="network_failed">网络连接失败~</string>
+    <string name="reset_try">重新连接</string>
+    <string name="cancel">取消</string>
+    <string name="service_failed">服务器连接失效~</string>
+
+
+    <string name="spd">SPD_登录</string>
+    <string name="department_str">部门:</string>
+    <string name="account_str">账号:</string>
+    <string name="password_str">密码:</string>
+    <string name="split_bar_null">请返回上一页查询拆分码！</string>
+    <string name="login_str">登录</string>
+    <string name="please_input_account">请输入账号</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="put_in_storage">入库验收</string>
+    <string name="code_goods">条码拣货</string>
+    <string name="spilt_bar">拆分条码</string>
+    <string name="spilt_bar_select">拆分查询</string>
+    <string name="variety_data_">品种信息</string>
+    <string name="pandian_str">盘点</string>
+
+    <string name="barcode_input">上架入库</string>
+    <string name="back_page">上一条</string>
+    <string name="next_page">下一条</string>
+    <string name="bar_code">码:</string>
+    <string name="select_str">查询</string>
+    <string name="supplier">供应商:</string>
+    <string name="send_depart">发货部门:</string>
+    <string name="department">部门:</string>
+    <string name="login_department">登录部门:</string>
+    <string name="belong_department">所属部门:</string>
+    <string name="please_department">请领部门:</string>
+    <string name="product_name">品名:</string>
+    <string name="specifications">规格:</string>
+    <string name="storage_location">仓位:</string>
+    <string name="vender">厂家:</string>
+    <string name="pandian_situation">盘点情况:</string>
+    <string name="pandian_situation_str">盘点情况</string>
+    <string name="batch_number">批号:</string>
+    <string name="validity_time">效期:</string>
+    <string name="gz_str">国准:</string>
+    <string name="have_check">已验收:</string>
+    <string name="have_all">余/共:</string>
+    <string name="account_number">账面数量:</string>
+    <string name="have_number">数量:</string>
+    <string name="have_refuse">已拒收:</string>
+    <string name="price_str">单位/进价:</string>
+    <string name="unit_str">单位:</string>
+
+    <string name="wait_check">待验收:</string>
+    <string name="split_bar">拆分条码:</string>
+    <string name="bar_number">定数条码:</string>
+    <string name="spilt_number">拆分数量:</string>
+    <string name="putin_bar">上架仓位:</string>
+    <string name="check_str">验收</string>
+    <string name="all_refuse">全拒</string>
+    <string name="some_refuse">部拒</string>
+    <string name="put_goods">上架</string>
+
+    <string name="home">主页</string>
+    <string name="my">入库</string>
+    <string name="local_merchants">更多</string>
+    <string name="car_str">更多</string>
+    <string name="help_str">帮助</string>
+    <string name="my_str">我</string>
+    <string name="FF">打算大饭店</string>
+    <string name="current_page_is_start">当前为第一页</string>
+
+    <string name="current_page_is_end">当前为最后一页</string>
+    <string name="please_input_you_barNumber">请输入要查询的码</string>
+    <string name="input_null">输入为空</string>
+    <string name="please_input_code_goods_submit">请扫描定数码</string>
+    <string name="please_input_check_number">请输入要验收数量</string>
+    <string name="please_input_split_bar">拆分条码为空</string>
+    <string name="please_input_pandian">请输入要查询的码</string>
+    <string name="please_first_select">请先查询</string>
+    <string name="submit_str">提交</string>
+    <string name="please_search_bar">请先查询</string>
+    <string name="re_scan">重扫</string>
+    <string name="delt_str">删除</string>
+
+    <string name="sure_str">确定</string>
+    <string name="bu_da_str">补打</string>
+    <string name="sure_to_submit">确定提交？</string>
+    <string name="sure_to_rescan">确定重扫？</string>
+    <string name="sure_to_delt">确定删除？</string>
+    <string name="watting_str">正在加载</string>
+    <string name="buda_is_fal">不可操作补打</string>
+    <string name="please_back_pag">请返回上一页</string>
+    <string name="role_str">所属角色:</string>
+    <string name="press_once_exit">再按一次退出程序</string>
+
+
+</resources>
