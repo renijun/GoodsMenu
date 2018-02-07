@@ -61,6 +61,7 @@ public class MyFragment extends BaseTabFragment {
 
     public void init() {
         userModel = appStore.getUserModle();
+        String ss=appStore.getDepartName();
         if (null != userModel) {
             tv_host.setText(userModel.HOSNAME);
             tv_account.setText(userModel.USERACCOUNT);
@@ -68,6 +69,7 @@ public class MyFragment extends BaseTabFragment {
             tv_belong_depar.setText(userModel.DEPTNAME);
             tv_role.setText(userModel.ROLENAME);
             tv_login_depar.setText(appStore.getDepartName());
+           // tv_login_depar.setText(appStore.getUserModle().DEPTNAME);
         }
     }
 

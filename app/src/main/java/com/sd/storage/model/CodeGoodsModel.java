@@ -33,7 +33,6 @@ public class CodeGoodsModel {
     public String SHIPCODE;
 
 
-
     public String QTY;
     public String UNITNAME;
     public String OUTDEPTID;

@@ -19,6 +19,7 @@ public class AppStore extends Store<AppAction> {
 
     private PreferencePlugin mPrefernce;
     private String userid;
+    private String deptName;
     private String deptId;
     private UserModel userModel;
     private Gson gson = new Gson();
@@ -107,8 +108,8 @@ public class AppStore extends Store<AppAction> {
     }*/
 
     public String getDepartName() {
-        userid = mPrefernce.getString(SelectDeptAction.DEPTNAME, null);
-        return userid;
+        deptName = mPrefernce.getString(SelectDeptAction.DEPTNAME, null);
+        return deptName;
     }
 
 

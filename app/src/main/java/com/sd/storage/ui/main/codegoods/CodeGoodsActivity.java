@@ -234,18 +234,19 @@ public class CodeGoodsActivity extends BaseSCActivity {
             }
         });
 
-        //请求错误
+        //查询请求错误
         codeGoodsStore.toMainSubscription(CodeGoodsStore.ChangeError.class, new Action1<CodeGoodsStore.ChangeError>() {
             @Override
             public void call(CodeGoodsStore.ChangeError changeError) {
                 getDisplay().hideWaittingDialog();
                 et_bar_number.setText("");
+                et_number.setText("");
                 ToastUtils.showBaseToast(changeError.msge, CodeGoodsActivity.this);
 
             }
         });
 
-        //请求错误
+        //提交请求错误
         codeGoodsStore.toMainSubscription(CodeGoodsStore.SubmitChangeError.class, new Action1<CodeGoodsStore.SubmitChangeError>() {
             @Override
             public void call(CodeGoodsStore.SubmitChangeError submitChangeError) {

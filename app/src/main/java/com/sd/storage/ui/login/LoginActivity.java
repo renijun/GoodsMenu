@@ -187,6 +187,7 @@ public class LoginActivity extends BaseSCActivity implements SelectDepartmentDia
     public void setDepartText(DepartmentModel item) {
 
         mAppStore.setDeptId(item.DEPTID);
+        mAppStore.setDeptName(item.DEPTNAME);
         tvDepartment.setText(item.DEPTNAME);
         // mAppStore.
     }

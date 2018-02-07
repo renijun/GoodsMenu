@@ -96,6 +96,7 @@ public class MainActivity2 extends BaseTabActivity {
         super.onDestroy();
 
         Log.e("111","11");
+
         
     }
 
