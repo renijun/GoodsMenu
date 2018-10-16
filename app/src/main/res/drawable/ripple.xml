@@ -10,5 +10,5 @@ The background color of this ripple drawable changes depending on the theme that
 user has selected.
 -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android"   >
-    <solid android:color="@color/white"/>
+    <solid android:color="@color/cffffff"/>
 </shape>

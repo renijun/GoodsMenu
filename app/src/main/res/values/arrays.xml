@@ -2,13 +2,6 @@
 <resources>
 
 
-    <!--简版首页提示-->
-    <string-array name="tab_main_temp">
-        <item>@string/home</item>
-        <item>@string/local_merchants</item>
-        <item>@string/help_str</item>
-        <item>@string/my_str</item>
-    </string-array>
 
 
 </resources>

@@ -11,25 +11,41 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.VIBRATE" />
 
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+    <!-- 设置相机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
     <application
         android:name=".app.StorageApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_logo"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_logo"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <!-- glide 自定义缓存 -->
-        <meta-data
+       <!-- <meta-data
             android:name="com.sd.storage.common.glide.config.GlideConfiguration"
-            android:value="GlideModule" />
+            android:value="GlideModule" />-->
+
 
         <activity
             android:name=".ui.MainActivity"
-            android:screenOrientation="portrait" />
-
-        <activity
-            android:name=".ui.login.LoginActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan">
@@ -40,35 +56,78 @@
             </intent-filter>
 
         </activity>
-
         <activity
-            android:name=".ui.main.PutInStorageActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden" />
-
-        <activity
-            android:name=".ui.main.BarCodeInputActivity"
+            android:name=".ui.main.meunmanage.addnewvege.AddNewVegeActivity"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.MainActivity2"
-            android:screenOrientation="portrait">
 
-        </activity>
 
 
         <activity
-            android:name=".ui.main.splitbar.SplitActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
-
-        <activity
-            android:name=".ui.main.pandian.PandianMainActivity"
+            android:name=".ui.main.vagedetails.VageDetailsActivity"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name=".ui.main.codegoods.CodeGoodsActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+            android:name=".ui.main.weekmeun.WeekMenuActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".ui.main.addcommend.AddCommentActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.main.meunorder.MeunOrderActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.main.search.SearchVageActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.main.meunmanage.MeunManageActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".ui.main.meunmanage.managesearch.ManageSearchActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".ui.main.meunmanage.manageedit.MansageEditActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.main.votemanage.VoteManageActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".ui.main.OrderActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.main.meunmanage.addweekmeun.AddWeekMeunActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.main.settime.SetTimeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.main.settime.SetMainActivity"
+            android:screenOrientation="portrait" />
+
+      <!--  <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                />
+        </provider>-->
 
     </application>
 

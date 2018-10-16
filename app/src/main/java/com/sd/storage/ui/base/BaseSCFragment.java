@@ -3,12 +3,13 @@ package com.sd.storage.ui.base;
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 
-import com.dframe.lib.store.Store;
-import com.dframe.lib.utils.ToastUtils;
+
 import com.sd.storage.R;
 import com.sd.storage.actions.ActionsCreator;
 import com.sd.storage.app.StorageApplication;
 import com.sd.storage.common.ErrorStateCode;
+import com.sd.storage.dlib.store.Store;
+import com.sd.storage.dlib.utils.ToastUtils;
 import com.sd.storage.listener.OnErrorReloadListener;
 
 import rx.functions.Action1;

@@ -4,16 +4,12 @@ package com.sd.storage.modules;
 
 import android.util.Log;
 
-import com.dframe.lib.Constants;
-import com.dframe.lib.utils.StringUtils;
 import com.sd.storage.BuildConfig;
 import com.sd.storage.UrlManager;
 import com.sd.storage.api.ApiService;
 import com.sd.storage.common.SDGsonConverterFactory;
 
 import java.io.IOException;
-import java.net.URLEncoder;
-import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 import javax.inject.Singleton;

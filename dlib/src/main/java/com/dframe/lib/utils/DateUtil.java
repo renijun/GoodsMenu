@@ -29,6 +29,17 @@ public class DateUtil {
 				+ calendar.get(Calendar.DAY_OF_MONTH) + "日 ";
 	}
 
+	/**
+	 * 判断double是否是整数
+	 * @param obj
+	 * @return
+	 */
+	public  static boolean isIntegerForDouble(double obj) {
+		double eps = 1e-10;  // 精度范围
+		return obj - Math.floor(obj) < eps;
+	}
+
+
 	public static String getNow(String format) {
 		if (null == format || "".equals(format)) {
 			format = PATTERN;

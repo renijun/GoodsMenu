@@ -1,7 +1,7 @@
 package com.sd.storage.actions;
 
-import com.dframe.lib.dispatcher.Dispatcher;
 import com.sd.storage.api.ApiService;
+import com.sd.storage.dlib.dispatcher.Dispatcher;
 import dagger.MembersInjector;
 import dagger.internal.Factory;
 import javax.annotation.Generated;

@@ -47,10 +47,10 @@ public abstract class Store<T extends Action> extends ICompositeSubscription {
                     if (object instanceof DataContainer) {
                         DataContainer container = (DataContainer) action.getData();
                         // tokenId 不可用
-                        if (container.Code == 300) {
+                        if (container.code == 300) {
                             dispatcherStore(new AppErrorState(300));
                         } else {
-                            dispatcherStore(new ErrorState(container.ErrCode, container.Message));
+                            dispatcherStore(new ErrorState(container.ErrCode, container.message));
                         }
                         return;
                     }

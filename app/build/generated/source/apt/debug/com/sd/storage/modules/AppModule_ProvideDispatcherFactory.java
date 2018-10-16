@@ -1,6 +1,6 @@
 package com.sd.storage.modules;
 
-import com.dframe.lib.dispatcher.Dispatcher;
+import com.sd.storage.dlib.dispatcher.Dispatcher;
 import dagger.internal.Factory;
 import javax.annotation.Generated;
 

@@ -9,11 +9,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.dframe.lib.comm.CommonMessageDialog;
-import com.dframe.lib.utils.statusBarHelper.Helper;
 import com.sd.storage.AndroidDisplay;
 import com.sd.storage.Display;
 import com.sd.storage.R;
+import com.sd.storage.dlib.comm.CommonMessageDialog;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;

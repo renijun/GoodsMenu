@@ -1,6 +1,7 @@
 package com.sd.storage;
 
-import com.dframe.lib.widgets.dialog.DialogControl;
+
+import com.sd.storage.dlib.widgets.dialog.DialogControl;
 
 /**
  * Created by MrZhou on 2017/5/13.
@@ -10,20 +11,37 @@ public interface Display extends DialogControl {
 
     void setSupportActionBar(Object toolbar);
 
-    void startLoginActivity();
 
-    void startMainActivity();
+    void startWeekMenuActivity();
 
-    void startPutInStorageActivity();
+    void startVageDetailsActivity(String  vegeid);
 
-    void startBarCodeInputActivity();
 
-    void startSplitActivity();
+    void startAddCommentActivity(String vegeid);
 
-    void startPandianMainActivity();
+    void startMeunOrderActivity();
 
-    void startMainActivity2();
+    void startSearchVageActivity();
 
+    void startMeunManageActivity();
+
+    void startManageSearchActivity();
+
+    void startAddNewVegeActivity();
+
+    void startMansageEditActivity();
+
+    void startVoteManageActivity();
+
+    void startOrderActivity();
+
+
+    void startSetTimeActivity();
+
+    void startSetMainActivity();
+
+
+    void startAddWeekMeunActivity(String dayid,String typeid);
 
     void showWaittingDialog(String text);
 
@@ -31,7 +49,12 @@ public interface Display extends DialogControl {
 
     void hideWaittingDialog();
 
-    void startCodeGoodsActivity();
+
+
+
+
+
+
 
 
 }

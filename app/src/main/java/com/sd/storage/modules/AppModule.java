@@ -3,8 +3,9 @@ package com.sd.storage.modules;
 import android.app.Application;
 import android.content.res.Resources;
 
-import com.dframe.lib.dispatcher.Dispatcher;
-import com.dframe.lib.utils.PreferencePlugin;
+
+import com.sd.storage.dlib.dispatcher.Dispatcher;
+import com.sd.storage.dlib.utils.PreferencePlugin;
 
 import javax.inject.Singleton;
 

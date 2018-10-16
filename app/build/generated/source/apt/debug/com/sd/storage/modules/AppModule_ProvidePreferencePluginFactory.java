@@ -1,6 +1,6 @@
 package com.sd.storage.modules;
 
-import com.dframe.lib.utils.PreferencePlugin;
+import com.sd.storage.dlib.utils.PreferencePlugin;
 import dagger.internal.Factory;
 import javax.annotation.Generated;
 

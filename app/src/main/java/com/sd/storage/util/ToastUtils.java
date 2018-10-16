@@ -1,13 +1,9 @@
 package com.sd.storage.util;
 
 import android.content.Context;
-import android.view.Gravity;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.dframe.lib.R;
+
 
 import java.util.Timer;
 import java.util.TimerTask;

@@ -1,6 +1,7 @@
 package com.sd.storage.actions;
 
-import com.dframe.lib.action.Action;
+
+import com.sd.storage.dlib.action.Action;
 
 import javax.inject.Inject;
 

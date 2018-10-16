@@ -2,8 +2,7 @@ package com.sd.storage.dialog;
 
 import android.app.Activity;
 
-import com.dframe.lib.R;
-import com.dframe.lib.widgets.dialog.WaitDialog;
+import com.sd.storage.R;
 
 
 /**

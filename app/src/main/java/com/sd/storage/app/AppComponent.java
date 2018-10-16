@@ -3,19 +3,19 @@ package com.sd.storage.app;
 import android.app.Application;
 
 import com.sd.storage.modules.AppModule;
-import com.sd.storage.ui.MainActivity2;
-import com.sd.storage.ui.login.LoginActivity;
-import com.sd.storage.ui.main.BarCodeInputActivity;
-import com.sd.storage.ui.main.CartFragmentV3;
-import com.sd.storage.ui.main.HomeFragment;
-import com.sd.storage.ui.main.LocalMerchantsFragment;
-import com.sd.storage.ui.main.MyFragment;
-import com.sd.storage.ui.main.PutInStorageActivity;
-import com.sd.storage.ui.main.codegoods.CodeGoodsActivity;
-import com.sd.storage.ui.main.pandian.PandianFragment;
-import com.sd.storage.ui.main.pandian.PandianSonFragment;
-import com.sd.storage.ui.main.splitbar.SplitBarFragment;
-import com.sd.storage.ui.main.splitbar.SplitSonFragment;
+import com.sd.storage.ui.MainActivity;
+import com.sd.storage.ui.main.addcommend.AddCommentActivity;
+import com.sd.storage.ui.main.meunmanage.MeunManageActivity;
+import com.sd.storage.ui.main.meunmanage.addnewvege.AddNewVegeActivity;
+import com.sd.storage.ui.main.meunmanage.addweekmeun.AddWeekMeunActivity;
+import com.sd.storage.ui.main.meunmanage.manageedit.MansageEditActivity;
+import com.sd.storage.ui.main.meunmanage.managesearch.ManageSearchActivity;
+import com.sd.storage.ui.main.meunorder.MeunOrderActivity;
+import com.sd.storage.ui.main.search.SearchVageActivity;
+import com.sd.storage.ui.main.settime.SetTimeActivity;
+import com.sd.storage.ui.main.vagedetails.VageDetailsActivity;
+import com.sd.storage.ui.main.votemanage.VoteManageActivity;
+import com.sd.storage.ui.main.weekmeun.WeekMenuActivity;
 
 import javax.inject.Singleton;
 
@@ -40,38 +40,35 @@ public interface AppComponent {
 
     void inject(StorageApplication app);
 
-    void inject(LoginActivity activity);
-
-    void inject(MainActivity2 activity);
-
-    void inject(HomeFragment fragment);
-
-    void inject(LocalMerchantsFragment fragment);
-
-    void inject(CartFragmentV3 fragment);
-
-    void inject(MyFragment fragment);
-
-    void inject(PutInStorageActivity activity);
-
-    void inject(BarCodeInputActivity barCodeInputActivity);
 
 
-    void inject(SplitBarFragment fragment);
+    void inject(WeekMenuActivity weekMenuActivity);
 
-    void inject(SplitSonFragment fragment);
+    void inject(AddCommentActivity addCommentActivity);
 
-    void inject(PandianFragment fragment);
-
-    void inject(PandianSonFragment fragment);
-
-    void inject(CodeGoodsActivity fragment);
+    void inject(VageDetailsActivity vageDetailsActivity);
 
 
+    void inject(MeunOrderActivity meunOrderActivity);
+
+    void inject(SearchVageActivity searchVageActivity);
+
+    void inject(MeunManageActivity meunManageActivity);
+
+    void inject(ManageSearchActivity manageSearchActivity);
+
+    void inject(AddNewVegeActivity addNewVegeActivity);
 
 
+    void inject(MansageEditActivity mansageEditActivity);
 
+    void inject(VoteManageActivity voteManageActivity);
 
+    void inject(AddWeekMeunActivity addWeekMeunActivity);
+
+    void inject(SetTimeActivity setTimeActivity);
+
+    void inject(MainActivity mainActivity);
 
 
 }

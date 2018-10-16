@@ -2,7 +2,6 @@ package com.sd.storage.dialog;
 
 import android.app.Dialog;
 import android.app.DialogFragment;
-import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -11,10 +10,6 @@ import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
-
-import com.sd.storage.R;
-import com.sd.storage.adapter.DepartAdapter;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;

@@ -1,11 +1,12 @@
 package com.sd.storage.actions;
 
-import com.dframe.lib.action.Action;
-import com.dframe.lib.bus.ICompositeSubscription;
-import com.dframe.lib.dispatcher.Dispatcher;
-import com.dframe.lib.store.Store;
+
 import com.sd.storage.api.ApiService;
-import com.sd.storage.common.RetryWhenProcess;;
+import com.sd.storage.dlib.action.Action;
+import com.sd.storage.dlib.bus.ICompositeSubscription;
+import com.sd.storage.dlib.dispatcher.Dispatcher;
+import com.sd.storage.dlib.store.Store;
+
 
 import javax.inject.Inject;
 
@@ -15,10 +16,7 @@ import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
-/**
- * Action 产生器，负责发送action 到 Store
- * Created by MrZhou on 2016/10/1.
- */
+
 public class ActionsCreator extends ICompositeSubscription {
 
     protected Dispatcher mDispatcher;

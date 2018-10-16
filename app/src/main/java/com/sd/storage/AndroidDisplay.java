@@ -5,19 +5,25 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import com.dframe.lib.utils.StringUtils;
-import com.dframe.lib.widgets.dialog.DialogHelper;
-import com.dframe.lib.widgets.dialog.WaitDialog;
 import com.sd.storage.dialog.WaitingDialog;
 import com.sd.storage.dialog.WaittingDialogHelper;
-import com.sd.storage.ui.MainActivity;
-import com.sd.storage.ui.MainActivity2;
-import com.sd.storage.ui.login.LoginActivity;
-import com.sd.storage.ui.main.BarCodeInputActivity;
-import com.sd.storage.ui.main.PutInStorageActivity;
-import com.sd.storage.ui.main.codegoods.CodeGoodsActivity;
-import com.sd.storage.ui.main.pandian.PandianMainActivity;
-import com.sd.storage.ui.main.splitbar.SplitActivity;
+import com.sd.storage.dlib.utils.StringUtils;
+import com.sd.storage.dlib.widgets.dialog.DialogHelper;
+import com.sd.storage.dlib.widgets.dialog.WaitDialog;
+import com.sd.storage.ui.main.OrderActivity;
+import com.sd.storage.ui.main.addcommend.AddCommentActivity;
+import com.sd.storage.ui.main.meunmanage.MeunManageActivity;
+import com.sd.storage.ui.main.meunmanage.addnewvege.AddNewVegeActivity;
+import com.sd.storage.ui.main.meunmanage.addweekmeun.AddWeekMeunActivity;
+import com.sd.storage.ui.main.meunmanage.manageedit.MansageEditActivity;
+import com.sd.storage.ui.main.meunmanage.managesearch.ManageSearchActivity;
+import com.sd.storage.ui.main.meunorder.MeunOrderActivity;
+import com.sd.storage.ui.main.search.SearchVageActivity;
+import com.sd.storage.ui.main.settime.SetMainActivity;
+import com.sd.storage.ui.main.settime.SetTimeActivity;
+import com.sd.storage.ui.main.vagedetails.VageDetailsActivity;
+import com.sd.storage.ui.main.votemanage.VoteManageActivity;
+import com.sd.storage.ui.main.weekmeun.WeekMenuActivity;
 
 /**
  * Created by MrZhou on 2017/5/13.
@@ -46,41 +52,89 @@ public class AndroidDisplay implements Display {
         }
     }
 
+
+
+
+
     @Override
-    public void startLoginActivity() {
-        startActivity(LoginActivity.class);
+    public void startWeekMenuActivity() {
+        startActivity(WeekMenuActivity.class);
     }
 
     @Override
-    public void startMainActivity() {
-        startActivity(MainActivity.class);
+    public void startVageDetailsActivity(String vegeid) {
+        Intent intent = new Intent(mActivity,VageDetailsActivity.class);
+        intent.putExtra("vegeid", vegeid);
+        startActivity(intent);
     }
 
     @Override
-    public void startPutInStorageActivity() {
-        startActivity(PutInStorageActivity.class);
-    }
-
-    @Override
-    public void startPandianMainActivity() {
-        startActivity(PandianMainActivity.class);
-    }
-
-
-    @Override
-    public void startBarCodeInputActivity() {
-        startActivity(BarCodeInputActivity.class);
-    }
-
-    @Override
-    public void startSplitActivity() {
-        startActivity(SplitActivity.class);
+    public void startAddCommentActivity(String vegeid) {
+        Intent intent = new Intent(mActivity,AddCommentActivity.class);
+        intent.putExtra("vegeid", vegeid);
+        startActivity(intent);
 
     }
 
     @Override
-    public void startMainActivity2() {
-        startActivity(MainActivity2.class);
+    public void startAddWeekMeunActivity(String dayid,String typeid) {
+        Intent intent = new Intent(mActivity,AddWeekMeunActivity.class);
+        intent.putExtra("dayid", dayid);
+        intent.putExtra("typeid", typeid);
+        startActivity(intent);
+
+    }
+
+    @Override
+    public void startMeunOrderActivity() {
+        startActivity(MeunOrderActivity.class);
+    }
+
+    @Override
+    public void startSearchVageActivity() {
+        startActivity(SearchVageActivity.class);
+    }
+
+    @Override
+    public void startMeunManageActivity() {
+        startActivity(MeunManageActivity.class);
+    }
+
+    @Override
+    public void startManageSearchActivity() {
+        startActivity(ManageSearchActivity.class);
+    }
+
+    @Override
+    public void startAddNewVegeActivity() {
+        startActivity(AddNewVegeActivity.class);
+    }
+
+    @Override
+    public void startMansageEditActivity() {
+        startActivity(MansageEditActivity.class);
+    }
+
+    @Override
+    public void startVoteManageActivity() {
+        startActivity(VoteManageActivity.class);
+    }
+
+    @Override
+    public void startOrderActivity() {
+        startActivity(OrderActivity.class);
+    }
+
+
+    @Override
+    public void startSetTimeActivity() {
+        startActivity(SetTimeActivity.class);
+    }
+
+    @Override
+    public void startSetMainActivity() {
+        startActivity(SetMainActivity.class);
+
     }
 
 
@@ -92,6 +146,8 @@ public class AndroidDisplay implements Display {
     public void startActivity(Class<?> clazz) {
         mActivity.startActivity(new Intent(mActivity, clazz));
     }
+
+
 
     public void startActivity(Intent intent) {
         mActivity.startActivity(intent);
@@ -149,10 +205,6 @@ public class AndroidDisplay implements Display {
         }
     }
 
-    @Override
-    public void startCodeGoodsActivity() {
-        startActivity(CodeGoodsActivity.class);
-    }
 
     @Override
     public void showWaittingDialog(String text) {

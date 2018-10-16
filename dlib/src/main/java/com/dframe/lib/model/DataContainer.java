@@ -6,25 +6,25 @@ package com.dframe.lib.model;
 public class DataContainer<T> {
     public T data;
 
-/*    public int status;
-    public String message;*/
-
     public boolean Success;
-    public int Code;
     public int ErrCode;
-    public String Message;
+    public int code;
+
+    public String message;
 
 
-/*    public boolean getResultOK() {
-        if (Code == 200) {
+    public boolean getResultOK() {
+        if (code == 200) {
             return true;
         }
         return false;
-    }*/
-
-    public boolean getResultOK() {
-        return Success;
     }
+
+
+
+  /*  public boolean getResultOK() {
+        return Success;
+    }*/
 
 
 }

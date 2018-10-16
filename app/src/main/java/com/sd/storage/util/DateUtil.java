@@ -1,5 +1,7 @@
 package com.sd.storage.util;
 
+import android.util.Log;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -255,4 +257,41 @@ public class DateUtil {
 //		return String.valueOf(second);
 		return String.valueOf(System.currentTimeMillis()/1000);
 	}
+
+
+	public static String getWeek() {
+
+		long time=System.currentTimeMillis();
+		Date date=new Date(time);
+		SimpleDateFormat  format=new SimpleDateFormat("EEEE");
+		Log.e("time","time6="+format.format(date));
+		String wek=format.format(date);
+
+
+		if (wek .equals("星期日")) {
+			return "7";
+		}
+		if (wek .equals("星期一")) {
+			return "1";
+		}
+		if (wek .equals("星期二")) {
+			return "2";
+		}
+		if (wek .equals("星期三")) {
+			return "3";
+		}
+		if (wek .equals("星期四")) {
+			return "4";
+		}
+		if (wek .equals("星期五")) {
+			return "5";
+		}
+		if (wek .equals("星期六")) {
+			return "6";
+		}
+
+		return "1";
+	}
+
+
 }
