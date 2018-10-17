@@ -38,6 +38,8 @@ public class MainActivity extends BaseSCActivity {
     LinearLayout lin_meunMannage;
 
 
+
+
     @Inject
     TimeActionsCreator timeActionsCreator;
     @Inject
