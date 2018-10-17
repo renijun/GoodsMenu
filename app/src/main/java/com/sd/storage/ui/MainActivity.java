@@ -92,6 +92,7 @@ public class MainActivity extends BaseSCActivity {
             case R.id.tv_order:
                // getDisplay().startOrderActivity();
                 break;
+
         }
     }
 
